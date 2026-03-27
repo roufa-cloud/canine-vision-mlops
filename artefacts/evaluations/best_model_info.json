@@ -1,0 +1,10 @@
+{
+  "model_name": "EfficientNetB0 Fine-Tuned",
+  "checkpoint_file": "efficientnetb0_finetuned.keras",
+  "val_accuracy": 0.8512820601463318,
+  "val_loss": 0.4821890592575073,
+  "val_top_5_accuracy": 0.986480176448822,
+  "preprocessing_used": [
+    "efficientnetb0"
+  ]
+}

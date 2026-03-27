@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# TensorFlow/Keras
+*.h5
+*.keras
+logs/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Project-specific artifacts
+artefacts/checkpoints/*.keras
+# artefacts/histories/*.json
+# artefacts/evaluations/*.png
+# artefacts/evaluations/*.csv
+# artefacts/architecture_diagrams/*.png
+
+# Keep structure but ignore large files
+!artefacts/.gitkeep
+!artefacts/checkpoints/.gitkeep
+!artefacts/checkpoints/efficientnetb0_finetuned.keras
+!artefacts/histories/.gitkeep
+!artefacts/evaluations/.gitkeep
+!artefacts/architecture_diagrams/.gitkeep
+
+# Data
+data/
+*.tfrecord
+*.npz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp

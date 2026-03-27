@@ -1,0 +1,46 @@
+dataset:
+  name: stanford_dogs
+  img_size: 224 
+  batch_size: 32 
+
+training:
+  frozen:
+    epochs: 12
+    epochs_fusion: 15
+    initial_lr: 0.001
+    initial_lr_fusion: 1.0e-4
+    early_stop_patience: 5
+    reduce_lr_patience: 3
+    reduce_lr_factor: 0.5
+
+  finetune:
+    epochs: 20
+    initial_lr_resnet50: 1.0e-5
+    initial_lr_efficientnetb0: 3.0e-5
+    early_stop_patience: 4
+    reduce_lr_patience: 3
+    reduce_lr_factor: 0.5
+
+models:
+  resnet50:
+    unfreeze_top_n: 10 
+    dropout: 0.5
+    global_pooling: "avg" # "avg" or "max"
+  
+  efficientnetb0:
+    unfreeze_top_n: 5
+    dropout: 0.5
+    global_pooling: "avg"
+  
+  fusion:
+    dense_units: 256
+    dropout: 0.5
+    freeze_backbones: true
+
+paths:
+  checkpoints: "../artefacts/checkpoints"
+  histories: "../artefacts/histories"
+  evaluations: "../artefacts/evaluations"
+  architecture_diagrams: "../artefacts/architecture_diagrams"
+
+seed: 42

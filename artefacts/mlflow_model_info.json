@@ -1,0 +1,6 @@
+{
+  "model_name": "dog-breed-classifier",
+  "run_id": "a26d1bf1d82b4759986d34c28eedb882",
+  "model_uri": "runs:/a26d1bf1d82b4759986d34c28eedb882/model",
+  "registered_at": null
+}

@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints
+notebooks/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation 
+docs/
+README.md
+*.md
+
+# Tests
+tests/
+test_images/
+demo_images/
+
+# Training scripts 
+scripts/prepare_deployment_artifacts.py
+scripts/test_inference.py
+run_app.sh
+
+# Large training artifacts
+artefacts/evaluations/*.png
+artefacts/architecture_diagrams/
+
+# for deployment
+# !artefacts/checkpoints/
+# !artefacts/class_names.json
+# !artefacts/evaluations/best_model_info.json
+# !artefacts/mlflow_model_info.json
+# !mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
